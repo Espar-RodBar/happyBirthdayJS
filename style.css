@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-wrapper.hidden {
+    height: 0;
+}
+
+.card-wrapper {
+    margin: 5rem auto;
+    width: 25rem;
+    height: 30rem;
+    background: url(./fondo.jpg);
+    background-position: top;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: height 1s, background-position 15s;
+}
+
+.card-wrapper.active {
+    background-position: bottom;
+}
+
+.avion {
+    width: 3rem;
+    height: 3rem;
+    top: -5rem;
+    background: url(./avion.png);
+    background-size: cover;
+
+    position: absolute;
+    transition: all 1s;
+}
+
+.avion.init {
+    top: -5rem;
+}
+
+.av1 {
+    left: 1.5rem;
+    top: 1rem;
+}
+.av2 {
+    left: 3rem;
+    top: 1.5rem;
+}
+.av3 {
+    left: 3.9rem;
+    top: 0.6rem;
+}
+.av4 {
+    left: 4.5rem;
+    top: 2.1rem;
+}
+.av5 {
+    left: 6.2rem;
+    top: 3.3rem;
+}
+.av6 {
+    left: 7.8rem;
+    top: 2.6rem;
+}
+.av7 {
+    left: 9rem;
+    top: 1.5rem;
+}
+.av8 {
+    left: 11rem;
+    top: 1.9rem;
+}
+.av9 {
+    left: 15rem;
+    top: 4.1rem;
+}
+.av10 {
+    left: 12rem;
+    top: 0.9rem;
+}
+.av11 {
+    left: 13rem;
+    top: 5rem;
+}
+.av12 {
+    left: 16rem;
+    top: 4.2rem;
+}
+.av13 {
+    left: 17rem;
+    top: 1.6rem;
+}
+.av15 {
+    left: 18.2rem;
+    top: 3.6rem;
+}
+.av15 {
+    left: 19rem;
+    top: 5.1rem;
+}
+.av16 {
+    left: 20.1rem;
+    top: 1rem;
+}
+
+.avion.end {
+    top: 50rem;
+
+    transition: all 20s;
+}
+
+.button-wrapper {
+    width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding: 1rem 0.5rem;
+    background: linear-gradient(
+        to left,
+        rgb(171, 224, 244),
+        rgb(141, 141, 245),
+        rgb(199, 235, 250)
+    );
+    border-radius: 9px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.feliz.init {
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+}
+.feliz {
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 30rem;
+    background: url(./feliz\ cumple.png);
+    background-size: contain;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: all 1s;
+}
